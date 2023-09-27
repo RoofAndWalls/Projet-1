@@ -1,0 +1,8 @@
+class Bouteille
+----------
+String shape
+String type
+----------
+void showInfo()
+void specifyShape (String)
+void specifyType(String)
