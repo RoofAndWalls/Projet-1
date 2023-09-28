@@ -2,7 +2,8 @@ class Bouteille
 ----------
 String shape
 String type
+String size
 ----------
-void showInfo()
 void specifyShape (String)
 void specifyType(String)
+void specifySize(String)
