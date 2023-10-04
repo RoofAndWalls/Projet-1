@@ -45,8 +45,25 @@ public String toString() {
     output += "type?" + this.type + "; ";
     output += "shape" + this.shape + "; ";
     output += "size" + this.size + "\n";
+
+    return output;
 }
 
+@Override
+public boolean equals(Object otherBouteille) {
+    if (this == otherBouteille) {
+        return true;
+    }
 
+    if (!(otherBouteille instanceof Bouteille)) {
+        return false;
+    }
 
+Bouteille o = (Bouteille)otherBouteille;
+
+    return o.type == this.type
+    && o.shape .equals (this.shape)
+    && o.size .equals (this.size);
+    
+    }
 }

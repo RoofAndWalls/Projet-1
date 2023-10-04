@@ -13,13 +13,17 @@ Bt2.specifyType("Bouteille jus");
 Bt2.specifySize("12cm");
 
 System.out.println("Bt");
+System.out.println(Bt);
 System.out.println("shape:" + Bt.shape);
 System.out.println("type:" + Bt.type);
 System.out.println("size:" + Bt.size);
 
 System.out.println("Bt2");
+System.out.println(Bt2);
 System.out.println("shape:" + Bt2.shape);
 System.out.println("type:" + Bt2.type);
 System.out.println("size:" + Bt2.size);
+
+System.out.println(Bt.equals(Bt2));
 }
 }
