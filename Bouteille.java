@@ -1,11 +1,11 @@
 public class Bouteille {
 
-    String type = "Empty bottle";
-    String shape = "Cercle";
-    String size = "1cm";
-    double side = 1.0;
-    double area;
-    double perimeter; 
+   private String type = "Empty bottle";
+   private String shape = "Cercle";
+   private String size = "1cm";
+   private double side = 1.0;
+   private double area;
+   private double perimeter; 
 
 Bouteille(){
     this(1.0);
@@ -14,29 +14,55 @@ Bouteille(){
 Bouteille (double side) {
     this.side = side;
 
-    calculateArea();
-    calculatePerimeter();
+    setArea();
+    setPerimeter();
 
 }
 
-    public void specifyType(String type) {
+    public void setType(String type) {
         this.type = type;
     }
 
-    public void specifyShape(String shape){
+    public void setShape(String shape){
         this.shape = shape;
     }
 
-    public void specifySize(String size) {
+    public void setSize(String size) {
         this.size = size;
     }
 
-public void calculateArea() {
+    public void setArea(String area) {
+        this.area = area;
+    }
+
+    public void setPerimeter(String type) {
+        this.perimeter = perimeter;
+    }
+
+public void setArea() {
     area = side/2*side/2 * 3.14;
 }
 
-public void calculatePerimeter() {
+public void setPerimeter() {
     perimeter = side*3.14;
+}
+
+Bouteille (String type, String shape, String size) {
+    setType(type);
+    setShape(shape);
+    setSize(size);
+}
+
+public String getType() {
+    return type;
+}
+
+public String getShape() {
+    return shape;
+}
+
+public String getSize() {
+    return size;
 }
 
 @Override

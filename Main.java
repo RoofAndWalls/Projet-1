@@ -3,14 +3,14 @@ public class Main {
         Bouteille Bt = new Bouteille();
         Bouteille Bt2 =  new Bouteille();
 
- Bt.specifyShape("Cylindre"); 
- Bt.specifyType("Bouteille d'eau");
- Bt.specifySize("10cm");
+ Bt.setShape("Cylindre"); 
+ Bt.setType("Bouteille d'eau");
+ Bt.setSize("10cm");
 
 
-Bt2.specifyShape("Hexagon"); 
-Bt2.specifyType("Bouteille jus");
-Bt2.specifySize("12cm");
+Bt2.setShape("Hexagon"); 
+Bt2.setType("Bouteille jus");
+Bt2.setSize("12cm");
 
 System.out.println("Bt");
 System.out.println(Bt);
