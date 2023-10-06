@@ -31,11 +31,11 @@ Bouteille (double side) {
         this.size = size;
     }
 
-    public void setArea(String area) {
+    public void setArea(Double area) {
         this.area = area;
     }
 
-    public void setPerimeter(String type) {
+    public void setPerimeter(Double perimeter) {
         this.perimeter = perimeter;
     }
 
@@ -63,6 +63,15 @@ public String getShape() {
 
 public String getSize() {
     return size;
+}
+
+
+public Double getArea() {
+    return area;
+}
+
+public Double getPerimeter() {
+    return perimeter;
 }
 
 @Override
